@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Databases & Data Security - Narrative</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased py-12 px-6">
+  <div class="max-w-3xl mx-auto space-y-6">
+    <a href="../index.html" class="inline-flex items-center text-emerald-400 hover:text-emerald-300 hover:underline text-sm font-medium">
+      ← Back to Portfolio
+    </a>
+    
+    <div class="bg-slate-900 border border-slate-800 rounded-xl p-8 space-y-6 shadow-lg">
+      <div class="border-b border-slate-800 pb-4">
+        <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400">Category III</span>
+        <h1 class="text-3xl font-extrabold text-white mt-1">Artifact Narrative: Databases &amp; Data Security</h1>
+      </div>
+      
+      <section class="space-y-2">
+        <h2 class="text-xl font-bold text-emerald-400">Artifact Description</h2>
+        <p class="text-slate-300 text-sm leading-relaxed">
+          The artifact selected for this category is the persistent data layer of the Travlr Getaways application, built with MongoDB, Express.js, and Node.js. It powers a full-stack architecture that serves dynamic customer travel data while providing an authenticated administrative dashboard for record management.
+        </p>
+      </section>
 
+      <section class="space-y-2">
+        <h2 class="text-xl font-bold text-emerald-400">Justification of Inclusion</h2>
+        <p class="text-slate-300 text-sm leading-relaxed">
+          This artifact demonstrates competence in non-relational document modeling, persistent storage operations, and robust database authorization. The initial iteration contained unauthenticated CRUD operations and loose schema constraints that left endpoints susceptible to injection attacks and inconsistent data states.
+        </p>
+        <p class="text-slate-300 text-sm leading-relaxed">
+          Key enhancements made to the system:
+        </p>
+        <ul class="list-disc list-inside text-slate-300 text-sm space-y-1.5 pl-2">
+          <li><strong>Normalized Mongoose Schemas:</strong> Implemented strict validation constraints, field type casting, and default handlers to guarantee data integrity across document collections.</li>
+          <li><strong>Stateless Authentication (JWT):</strong> Integrated JSON Web Token (JWT) verification middleware alongside salted password hashing (bcrypt) to enforce strict access control on all modification endpoints.</li>
+          <li><strong>Query Optimization &amp; Sanitization:</strong> Added targeted indexing on frequently searched fields and sanitized incoming query payloads to defend against NoSQL injection vectors.</li>
+        </ul>
+      </section>
+
+      <section class="space-y-2">
+        <h2 class="text-xl font-bold text-emerald-400">Course Outcomes Met</h2>
+        <ul class="list-disc list-inside text-slate-300 text-sm space-y-1.5 pl-2">
+          <li><strong>Outcome 4 (Data Persistence &amp; Security):</strong> Implemented secure data storage solutions utilizing role-based access control, cryptographic password storage, and structured query handling.</li>
+          <li><strong>Outcome 5 (Full-Stack System Integration):</strong> Connected decoupled client interfaces to persistent backend services through RESTful endpoints while maintaining separation of concerns.</li>
+        </ul>
+      </section>
+
+      <section class="space-y-2">
+        <h2 class="text-xl font-bold text-emerald-400">Reflection &amp; Evolution</h2>
+        <p class="text-slate-300 text-sm leading-relaxed">
+          Developing and refactoring this persistent service bridged the gap between front-end UI interactions and backend reliability. It illustrated that database architecture cannot be isolated from application security—every access vector must be guarded by strict validation, parameterized lookups, and explicit authentication controls.
+        </p>
+      </section>
+
+      <div class="pt-6 border-t border-slate-800 flex items-center justify-between">
+        <a href="https://github.com/Eavilessnhu/ePortfolio/tree/main/databases/src" target="_blank" rel="noreferrer" class="text-sm font-medium text-emerald-400 hover:text-emerald-300">
+          View Source Code on GitHub →
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
