@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Algorithms & Data Structures - Narrative</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased py-12 px-6">
+  <div class="max-w-3xl mx-auto space-y-6">
+    <a href="../index.html" class="inline-flex items-center text-emerald-400 hover:text-emerald-300 hover:underline text-sm font-medium">
+      ← Back to Portfolio
+    </a>
+    
+    <div class="bg-slate-900 border border-slate-800 rounded-xl p-8 space-y-6 shadow-lg">
+      <div class="border-b border-slate-800 pb-4">
+        <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400">Category II</span>
+        <h1 class="text-3xl font-extrabold text-white mt-1">Artifact Narrative: Algorithms &amp; Data Structures</h1>
+      </div>
+      
+      <section class="space-y-2">
+        <h2 class="text-xl font-bold text-emerald-400">Artifact Description</h2>
+        <p class="text-slate-300 text-sm leading-relaxed">
+          The artifact selected for this category focuses on cryptographic checksum verification and algorithmic lookup optimization, engineered within a secure computing context. The system provides data verification pipelines, digest generations, and integrity auditing across files and transactional streams.
+        </p>
+      </section>
+
+      <section class="space-y-2">
+        <h2 class="text-xl font-bold text-emerald-400">Justification of Inclusion</h2>
+        <p class="text-slate-300 text-sm leading-relaxed">
+          This artifact illustrates computational problem solving, asymptotic performance analysis, and the implementation of robust hashing algorithms. Prior to enhancement, verification logic relied on naive linear traversals that scaled poorly under heavier workloads and lacked formal protection against data corruption or intentional tampering.
+        </p>
+        <p class="text-slate-300 text-sm leading-relaxed">
+          The refactoring targeted both efficiency and security:
+        </p>
+        <ul class="list-disc list-inside text-slate-300 text-sm space-y-1.5 pl-2">
+          <li><strong>Algorithmic Complexity Reduction:</strong> Replaced brute-force $O(n)$ search sequences with hash-based structures to achieve near $O(1)$ constant-time lookups for stored signatures.</li>
+          <li><strong>Cryptographic Rigor:</strong> Integrated the Java Cryptography Architecture (JCA) using SHA-256 digests, ensuring data integrity verification adheres to industry standards.</li>
+          <li><strong>Stream Buffering:</strong> Optimized buffer chunk sizes during I/O reads to avoid high heap memory spikes when hashing large payloads.</li>
+        </ul>
+      </section>
+
+      <section class="space-y-2">
+        <h2 class="text-xl font-bold text-emerald-400">Course Outcomes Met</h2>
+        <ul class="list-disc list-inside text-slate-300 text-sm space-y-1.5 pl-2">
+          <li><strong>Outcome 2 (Computational Thinking &amp; Optimization):</strong> Evaluated and applied data structures and algorithmic approaches, analyzing trade-offs in time and space complexity ($O$-notation).</li>
+          <li><strong>Outcome 4 (Security Mindset):</strong> Implemented defense-in-depth principles and cryptographic primitives to protect systems and data flows from tampering.</li>
+        </ul>
+      </section>
+
+      <section class="space-y-2">
+        <h2 class="text-xl font-bold text-emerald-400">Reflection &amp; Evolution</h2>
+        <p class="text-slate-300 text-sm leading-relaxed">
+          Refactoring this artifact emphasized that algorithmic correctness is only half the battle—efficiency and resource constraints dictate real-world success. Moving from theoretical big-O notation to profiling actual throughput and memory consumption solidified my understanding of balancing computational overhead with defensive security requirements.
+        </p>
+      </section>
+
+      <div class="pt-6 border-t border-slate-800 flex items-center justify-between">
+        <a href="https://github.com/Eavilessnhu/ePortfolio/tree/main/algorithms/src" target="_blank" rel="noreferrer" class="text-sm font-medium text-emerald-400 hover:text-emerald-300">
+          View Source Code on GitHub →
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
